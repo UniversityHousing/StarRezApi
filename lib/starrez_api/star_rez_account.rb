@@ -87,7 +87,7 @@ XML
         if charge_group[:id].present?
           charge_groups_string += %(<BreakUp ChargeGroupID="#{charge_group[:id]}">)
         elsif charge_group[:name].present?
-         charge_groups_string += %(<BreakUp ChargeGroup="#{charge_group[:name]}">)
+   exi       charge_groups_string += %(<BreakUp ChargeGroup="#{charge_group[:name]}">)
         else
           raise ArgumentError, "Charge group ID or name must be provided"
         end
