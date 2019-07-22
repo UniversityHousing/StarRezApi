@@ -207,7 +207,7 @@ module StarRezApi
     
 
     def find(entry, options = {})
-      options[:size] ||= 50
+      options[:size] ||= 70
       options[:page] = options[:page].blank? || options[:page] == 1 ? 0 : options[:page] * options[:size]
       query_array = Array.new
       unless options[:conditions].blank?
